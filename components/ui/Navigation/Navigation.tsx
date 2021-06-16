@@ -60,7 +60,7 @@ const Navigation: React.FC = () => {
       }`}
     >
       <ContentSection className="px-8">
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-3 md:space-x-6">
           <NavLink current={currentSection === "home" && true} href="#">
             Home
           </NavLink>

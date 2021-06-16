@@ -38,9 +38,12 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
               </a>
             </div>
             <div className="px-1 flex">
-              <div className="transition-transform transform hover:rotate-3 hover:scale-105 text-gray-50 px-8 py-2 text-xl rounded-full bg-gradient-to-r from-green-800 to-green-600 cursor-pointer">
-                <a href="#projects">My Projects</a>
-              </div>
+              <a
+                href="#projects"
+                className="transition-transform transform hover:rotate-3 hover:scale-105 text-gray-50 px-8 py-2 text-xl rounded-full bg-gradient-to-r from-green-800 to-green-600 cursor-pointer"
+              >
+                My Projects
+              </a>
             </div>
           </div>
         </ContentSection>

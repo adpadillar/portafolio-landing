@@ -1,67 +1,65 @@
 {
   "projects": [
     {
-      "src": "/img/irstrategies.png",
-      "title": "IR Strategies Website",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas odit deserunt ipsa, veritatis libero animi vero modi maiores, provident quisquam sapiente dolore quos quam ut a qui perspiciatis? Debitis!",
+      "src": "/img/iliana-hegewisch.png",
+      "title": "Iliana Hegewisch Landing Page",
+      "body": "This landing page was built and designed from scratch. Some of the main technologies I used include ReactJS, NextJS, TailwindCSS, Formspree.io and Google Calendar API. This website includes a calendar interface for creating appointments in Google Calendar without leaving the website",
       "links": {
-        "website": "https://irstrategies.com.mx/",
-        "sourceCode": "https://github.com/FadedController/irstrategies"
-      }
+        "website": "https://iliana-hegewisch.vercel.app/",
+        "sourceCode": "https://github.com/FadedController/Iliana-Hegewisch"
+      },
+      "technologies": ["NextJS", "Typescript", "TailwindCSS", "Google Calendar API" ]
+    },
+    {
+      "src": "/img/next-geek.png",
+      "title": "NextGeek Technologies Website",
+      "body": "Built the website of an IT Company. I particularly enjoy the design of this website, which was built using ReactJS, NextJS, TailwindCSS and finally, Formspree.io, the backend service that managed contact form",
+      "links": {
+        "website": "https://next-geek.vercel.app/",
+        "sourceCode": "https://github.com/FadedController/next_geek"
+      },
+      "technologies": ["NextJS", "Typescript","TailwindCSS", "Formspree.io"]
+    },
+    {
+      "src": "/img/prettier-homework.png",
+      "title": "Prettier Homework PWA",
+      "body": "Prettier Homework is a to-do list progresive web app that syncs your data in real time with your account thanks to Google Firebase's Firestore. Built with ReactJS and Material UI, it's a great looking, highly functional web application",
+      "links": {
+        "website": "https://prettier-homework.web.app/",
+        "sourceCode": "https://github.com/iQodifyX/PrettierHomework"
+      },
+      "technologies": ["Firebase", "ReactJS", "Typescript"]
+    },
+    {
+      "src": "/img/vigiles.png",
+      "title": "Vigiles Analytica Landing Page",
+      "body": "This website was made for a threat analysis security company based in Canada. It was built using the mostly the same technologies: ReactJS, NextJS, TailwindCSS. The deployment process was a bit different because it was done via FTP to a bluehost server",
+      "links": {
+        "website": "https://vigiles.site/",
+        "sourceCode": "https://github.com/FadedController/vigiles_analytica"
+      },
+      "technologies": ["NextJS", "Typescript", "TailwindCSS", "FTP", "Bluehost"]
+    },
+    {
+      "src": "/img/sachin.png",
+      "title": "Sachin Global Traders Website",
+      "body": "This website showcased some of the products offered by an Indian Spice Trading Company. It was built to be highly customizable and scalable, just change the data and the webppage adapts to it. It was built using the same ReactJS, NextJS, and TailwindCSS stack",
+      "links": {
+        "website": "https://sachinglobaltraders.com/",
+        "sourceCode": "https://github.com/FadedController/FoodSite"
+      },
+      "technologies":["NextJS", "Typescript", "TailwindCSS", "Formspree.io"]
     },
     {
       "src": "/img/irstrategies.png",
       "title": "IR Strategies Website",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas odit deserunt ipsa, veritatis libero animi vero modi maiores, provident quisquam sapiente dolore quos quam ut a qui perspiciatis? Debitis!",
+      "body": "Website for the Marketing Agency 'IR Strategies'. This website was built using vanilla HTML5, CSS3, and JQuery and deployed in Netlify, taking advantage of Netlify Forms",
       "links": {
         "website": "https://irstrategies.com.mx/",
         "sourceCode": "https://github.com/FadedController/irstrategies"
-      }
-    },
-    {
-      "src": "/img/irstrategies.png",
-      "title": "IR Strategies Website",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas odit deserunt ipsa, veritatis libero animi vero modi maiores, provident quisquam sapiente dolore quos quam ut a qui perspiciatis? Debitis!",
-      "links": {
-        "website": "https://irstrategies.com.mx/",
-        "sourceCode": "https://github.com/FadedController/irstrategies"
-      }
-    },
-    {
-      "src": "/img/irstrategies.png",
-      "title": "IR Strategies Website",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas odit deserunt ipsa, veritatis libero animi vero modi maiores, provident quisquam sapiente dolore quos quam ut a qui perspiciatis? Debitis!",
-      "links": {
-        "website": "https://irstrategies.com.mx/",
-        "sourceCode": "https://github.com/FadedController/irstrategies"
-      }
-    },
-    {
-      "src": "/img/irstrategies.png",
-      "title": "IR Strategies Website",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas odit deserunt ipsa, veritatis libero animi vero modi maiores, provident quisquam sapiente dolore quos quam ut a qui perspiciatis? Debitis!",
-      "links": {
-        "website": "https://irstrategies.com.mx/",
-        "sourceCode": "https://github.com/FadedController/irstrategies"
-      }
-    },
-    {
-      "src": "/img/irstrategies.png",
-      "title": "IR Strategies Website",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas odit deserunt ipsa, veritatis libero animi vero modi maiores, provident quisquam sapiente dolore quos quam ut a qui perspiciatis? Debitis!",
-      "links": {
-        "website": "https://irstrategies.com.mx/",
-        "sourceCode": "https://github.com/FadedController/irstrategies"
-      }
-    },
-    {
-      "src": "/img/irstrategies.png",
-      "title": "IR Strategies Website",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas odit deserunt ipsa, veritatis libero animi vero modi maiores, provident quisquam sapiente dolore quos quam ut a qui perspiciatis? Debitis!",
-      "links": {
-        "website": "https://irstrategies.com.mx/",
-        "sourceCode": "https://github.com/FadedController/irstrategies"
-      }
+      },
+      "technologies": ["HTML5", "CSS3", "JQuery", "Netlify"]
     }
+    
   ]
 }
