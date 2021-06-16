@@ -1,10 +1,15 @@
 import React from "react";
+import Hero from "../components/ui/Hero";
+import Navigation from "../components/ui/Navigation/Navigation";
+import Projects from "../components/ui/Projects/Projects";
 
 const Index: React.FC = () => {
   return (
-    <div>
-      <h1 className="text-6xl font-semibold">This is a component</h1>
-    </div>
+    <>
+      <Navigation />
+      <Hero id="home" />
+      <Projects id="projects" />
+    </>
   );
 };
 
