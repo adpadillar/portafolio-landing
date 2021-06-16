@@ -15,7 +15,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
       <div className="flex-3 flex flex-col justify-center bg-gradient-to-b from-[#ffffffb4] to-[#ffffff69]">
         <ContentSection className="px-8 space-y-6">
           <div className="max-w-2xl font-poppins flex flex-col space-y-8">
-            <div className="flex flex-col space-y-2">
+            <div className="flex flex-col space-y-2 cursor-default">
               <h1 className="tracking-tight bg-gradient-to-r from-green-800 to-green-600 bg-clip-text text-transparent text-7xl sm:text-9xl font-bold uppercase">
                 Axel Padilla
               </h1>

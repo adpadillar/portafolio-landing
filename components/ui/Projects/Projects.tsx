@@ -38,8 +38,10 @@ const Projects: React.FC<ProjectProps> = ({ id }) => {
     <section id={id}>
       <ContentSection className="flex-col px-8 py-24 font-poppins space-y-16">
         <div className="flex flex-col space-y-6">
-          <h2 className="text-4xl text-gray-700 font-bold">My Projects</h2>
-          <p className="text-2xl text-gray-700 font-light">
+          <h2 className="text-4xl text-gray-700 font-bold cursor-default">
+            My Projects
+          </h2>
+          <p className="text-2xl text-gray-700 font-light cursor-default">
             Take a look at all of the frontend projects I have built during my
             time as a self taught frontend developer. The most recent projects
             are at the top

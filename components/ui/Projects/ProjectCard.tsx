@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Github } from "../../icons/Icons";
 interface ProjectCardProps {
   projectData: {
     src: string;
@@ -26,7 +26,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, reverse }) => {
         <img src={src} />
       </div>
       <div className="flex flex-col space-y-4 flex-1 py-4">
-        <h3 className="text-2xl font-medium text-gray-600">{title}</h3>
+        <h3 className="text-2xl font-medium text-gray-600 cursor-default">
+          {title}
+        </h3>
 
         {technologies && (
           <div className="flex space-x-1 overflow-x-auto">
@@ -37,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, reverse }) => {
             ))}
           </div>
         )}
-        <p className="text-lg font-light">{body}</p>
+        <p className="text-lg font-light cursor-default">{body}</p>
         <div className="flex space-x-3">
           <a
             href={links.website}
@@ -51,7 +53,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, reverse }) => {
             target="_blank"
             className="text-center cursor-pointer transition-all transform hover:scale-105 border-2 hover border-green-600 text-green-600 font-medium px-8 py-2 rounded-md"
           >
-            Source code
+            <Github className="w-6 h-6 fill-current text-green-600" />
           </a>
         </div>
       </div>
