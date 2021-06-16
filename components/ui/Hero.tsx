@@ -24,23 +24,36 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
               </h2>
             </div>
             <div className="flex space-x-6 px-1">
-              <a href="https://github.com/FadedController/" target="_blank">
-                <Github className="fill-current text-green-800 h-6 w-6 transform hover:scale-110 hover:rotate-6 transition-transform" />
-              </a>
-              <a href="https://wa.me/5213321752871" target="_blank">
-                <WhatsApp className="fill-current text-green-800 h-6 w-6 transform hover:scale-110 hover:rotate-6 transition-transform" />
+              <a
+                className="transform hover:scale-110 hover:rotate-6 focus:scale-110 focus:rotate-6 transition-transform"
+                tabIndex={5}
+                href="https://github.com/FadedController/"
+                target="_blank"
+              >
+                <Github className="fill-current text-green-800 h-6 w-6" />
               </a>
               <a
+                className="transform hover:scale-110 hover:rotate-6 focus:scale-110 focus:rotate-6 transition-transform"
+                tabIndex={6}
+                href="https://wa.me/5213321752871"
+                target="_blank"
+              >
+                <WhatsApp className="fill-current text-green-800 h-6 w-6" />
+              </a>
+              <a
+                className="transform hover:scale-110 hover:rotate-6 focus:scale-110 focus:rotate-6 transition-transform"
+                tabIndex={7}
                 href="https://www.linkedin.com/in/axel-padilla-26022520b/"
                 target="_blank"
               >
-                <Linkedin className="fill-current text-green-800 h-6 w-6 transform hover:scale-110 hover:rotate-6 transition-transform" />
+                <Linkedin className="fill-current text-green-800 h-6 w-6" />
               </a>
             </div>
             <div className="px-1 flex">
               <a
+                tabIndex={8}
                 href="#projects"
-                className="transition-transform transform hover:rotate-3 hover:scale-105 text-gray-50 px-8 py-2 text-xl rounded-full bg-gradient-to-r from-green-800 to-green-600 cursor-pointer"
+                className="transition-transform transform hover:rotate-3 hover:scale-105 focus:rotate-3 focus:scale-105 text-gray-50 px-8 py-2 text-xl rounded-full bg-gradient-to-r from-green-800 to-green-600 cursor-pointer"
               >
                 My Projects
               </a>

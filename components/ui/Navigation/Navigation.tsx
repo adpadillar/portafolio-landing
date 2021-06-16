@@ -6,6 +6,7 @@ const Navigation: React.FC = () => {
   const [isOnTop, setIsOnTop] = useState(true);
   const [currentSection, setCurrentSection] = useState("home");
 
+  // Section Navigation states
   useEffect(() => {
     const sections = document.querySelectorAll("section");
 
@@ -22,6 +23,7 @@ const Navigation: React.FC = () => {
     });
   }, []);
 
+  // Is On Top ?
   useEffect(() => {
     let isScrolling = false;
 
@@ -60,20 +62,34 @@ const Navigation: React.FC = () => {
       }`}
     >
       <ContentSection className="px-8">
-        <ul className="flex space-x-3 md:space-x-6">
-          <NavLink current={currentSection === "home" && true} href="#">
+        <ul
+          className={`transition-all flex space-x-3 md:space-x-6 ${
+            isOnTop ? "text-xl" : "text-lg"
+          }`}
+        >
+          <NavLink
+            tabIndex={1}
+            current={currentSection === "home" && true}
+            href="#"
+          >
             Home
           </NavLink>
           <NavLink
+            tabIndex={2}
             current={currentSection === "projects" && true}
             href="#projects"
           >
             Projects
           </NavLink>
-          <NavLink current={currentSection === "about" && true} href="#about">
+          <NavLink
+            tabIndex={3}
+            current={currentSection === "about" && true}
+            href="#about"
+          >
             About
           </NavLink>
           <NavLink
+            tabIndex={4}
             current={currentSection === "contact" && true}
             href="#contact"
           >

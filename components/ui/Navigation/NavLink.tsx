@@ -3,9 +3,15 @@ import React, { useState } from "react";
 interface NavLinkProps {
   href?: string;
   current?: boolean;
+  tabIndex?: number;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href, children, current }) => {
+const NavLink: React.FC<NavLinkProps> = ({
+  href,
+  children,
+  current,
+  tabIndex,
+}) => {
   const [isMouseOver, setIsMouseOver] = useState(false);
 
   const handleMouseEnter = () => setIsMouseOver(true);
@@ -13,9 +19,10 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children, current }) => {
 
   return (
     <li
+      tabIndex={tabIndex}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`flex flex-col transition-transform transform hover:-rotate-2 hover:scale-105`}
+      className={`flex flex-col transition-transform transform hover:-rotate-2 focus:-rotate-2 hover:scale-105 focus:scale-105`}
     >
       <a href={href ? href : "#"}>{children}</a>
       <div

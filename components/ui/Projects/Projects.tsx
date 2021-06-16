@@ -6,12 +6,20 @@ import ENData from "./languages/en.json";
 const generateCards = (n?: number) => {
   let reversed = false;
   let count = n;
+  let tabIndex = 7; // 7+2 = 9th element on the TabIndex
 
   const ProjectCards = ENData.projects.map((project) => {
+    tabIndex += 2;
     reversed = !reversed;
     if (count <= 0) return undefined;
     count--;
-    return <ProjectCard projectData={project} reverse={reversed} />;
+    return (
+      <ProjectCard
+        tabIndex={tabIndex}
+        projectData={project}
+        reverse={reversed}
+      />
+    );
   });
 
   return ProjectCards;
@@ -51,12 +59,13 @@ const Projects: React.FC<ProjectProps> = ({ id }) => {
           {ProjectCards}
         </div>
         <div className="flex justify-center">
-          <div
+          <button
+            tabIndex={50}
             onClick={toggleLoad}
-            className="cursor-pointer transform transition-transform hover:rotate-3 hover:scale-105 text-xl font-medium bg-green-600 text-gray-50 px-8 py-2 rounded-full"
+            className="cursor-pointer transform transition-transform hover:rotate-3 hover:scale-105 focus:rotate-3 focus:scale-105 text-xl font-medium bg-green-600 text-gray-50 px-8 py-2 rounded-full"
           >
             {length === cardAmount ? "See Less Projects" : "See All Projects"}
-          </div>
+          </button>
         </div>
       </ContentSection>
     </section>

@@ -12,9 +12,14 @@ interface ProjectCardProps {
     technologies?: string[];
   };
   reverse?: boolean;
+  tabIndex: number;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, reverse }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  projectData,
+  reverse,
+  tabIndex,
+}) => {
   const { src, title, body, links, technologies } = projectData;
   return (
     <div
@@ -42,16 +47,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ projectData, reverse }) => {
         <p className="text-lg font-light cursor-default">{body}</p>
         <div className="flex space-x-3">
           <a
+            tabIndex={tabIndex}
             href={links.website}
             target="_blank"
-            className="text-center cursor-pointer transition-all transform hover:scale-105 bg-green-600 text-gray-50 font-medium px-8 py-2 rounded-md"
+            className="text-center cursor-pointer transition-all transform hover:scale-105 focus:scale-105 bg-green-600 text-gray-50 font-medium px-8 py-2 rounded-md"
           >
             Go To Website
           </a>
           <a
+            tabIndex={tabIndex + 1}
             href={links.sourceCode}
             target="_blank"
-            className="text-center cursor-pointer transition-all transform hover:scale-105 border-2 hover border-green-600 text-green-600 font-medium px-8 py-2 rounded-md"
+            className="text-center cursor-pointer transition-all transform hover:scale-105 focus:scale-105 border-2 hover border-green-600 text-green-600 font-medium px-8 py-2 rounded-md"
           >
             <Github className="w-6 h-6 fill-current text-green-600" />
           </a>
