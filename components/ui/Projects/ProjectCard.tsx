@@ -37,8 +37,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
         {technologies && (
           <div className="flex space-x-1 overflow-x-auto">
-            {technologies.map((text) => (
-              <div className="inline-block flex-shrink-0 cursor-default transition-all text-green-500 hover:text-gray-50 hover:bg-green-500 text-sm border-green-500 border-2 px-4 py-1 rounded-full">
+            {technologies.map((text, i) => (
+              <div
+                key={i}
+                className="inline-block flex-shrink-0 cursor-default transition-all text-green-500 hover:text-gray-50 hover:bg-green-500 text-sm border-green-500 border-2 px-4 py-1 rounded-full"
+              >
                 {text}
               </div>
             ))}

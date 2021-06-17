@@ -8,13 +8,14 @@ const generateCards = (n?: number) => {
   let count = n;
   let tabIndex = 7; // 7+2 = 9th element on the TabIndex
 
-  const ProjectCards = ENData.projects.map((project) => {
+  const ProjectCards = ENData.projects.map((project, i) => {
     tabIndex += 2;
     reversed = !reversed;
     if (count <= 0) return undefined;
     count--;
     return (
       <ProjectCard
+        key={i}
         tabIndex={tabIndex}
         projectData={project}
         reverse={reversed}
