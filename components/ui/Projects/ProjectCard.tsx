@@ -1,5 +1,5 @@
 import React from "react";
-import { Github } from "../../icons/Icons";
+import { Github } from "../../icons";
 interface ProjectCardProps {
   projectData: {
     src: string;

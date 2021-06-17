@@ -9,7 +9,7 @@ import {
   NextJS,
   Git,
   TailwindLogo,
-} from "../../icons/Icons";
+} from "../../icons";
 
 const Technologies: React.FC = () => {
   return (

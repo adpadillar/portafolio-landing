@@ -1,6 +1,6 @@
 import React from "react";
 import ContentSection from "../layout/ContentSection";
-import { Github, WhatsApp, Linkedin } from "../icons/Icons";
+import { Github, WhatsApp, Linkedin } from "../icons";
 import { useRouter } from "next/router";
 
 const Footer: React.FC = () => {

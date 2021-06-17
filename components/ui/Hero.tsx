@@ -1,6 +1,6 @@
 import React from "react";
 import ContentSection from "../layout/ContentSection";
-import { Github, Linkedin, WhatsApp } from "../icons/Icons";
+import { Github, Linkedin, WhatsApp } from "../icons";
 
 interface HeroProps {
   id?: string;
