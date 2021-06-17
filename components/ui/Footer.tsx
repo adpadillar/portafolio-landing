@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
       <ContentSection className="font-poppins px-6 pt-12 pb-10">
         <div className="flex-1 flex">
           <h4
-            className="flex flex-col text-xl font-bold text-gray-50 hover:text-green-300 transition-colors cursor-pointer"
+            className="flex flex-col text-xl font-bold text-gray-50 hover:text-green-300 transition-all transform hover:rotate-3 hover:scale-105 cursor-pointer"
             onClick={backToTop}
           >
             <span>Axel</span>

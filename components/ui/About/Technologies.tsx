@@ -13,7 +13,7 @@ import {
 
 const Technologies: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 cursor-default">
       <div className="flex shadow-lg transition-transform transform hover:scale-105 hover:rotate-1">
         <div className="p-3 bg-gray-50 rounded-l-xl">
           <ReactLogo className="h-12 w-12" />
