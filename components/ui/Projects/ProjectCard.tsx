@@ -44,7 +44,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
           </div>
         )}
-        <p className="text-lg font-light cursor-default">{body}</p>
+        <p className="text-lg font-light cursor-default text-gray-600">
+          {body}
+        </p>
         <div className="flex space-x-3">
           <a
             tabIndex={tabIndex}

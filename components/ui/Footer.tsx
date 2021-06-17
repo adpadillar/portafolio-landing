@@ -1,13 +1,21 @@
 import React from "react";
 import ContentSection from "../layout/ContentSection";
 import { Github, WhatsApp, Linkedin } from "../icons/Icons";
+import { useRouter } from "next/router";
 
 const Footer: React.FC = () => {
+  const router = useRouter();
+
+  const backToTop = () => router.push("#");
+
   return (
     <div className="w-full bg-gray-800">
       <ContentSection className="font-poppins px-6 pt-12 pb-10">
         <div className="flex-1 flex">
-          <h4 className="flex flex-col text-xl font-bold text-gray-50 hover:text-green-300 transition-colors cursor-default">
+          <h4
+            className="flex flex-col text-xl font-bold text-gray-50 hover:text-green-300 transition-colors cursor-pointer"
+            onClick={backToTop}
+          >
             <span>Axel</span>
             <span>Padilla</span>
           </h4>
@@ -21,10 +29,10 @@ const Footer: React.FC = () => {
               <a href="#projects">Projects</a>
             </li>
             <li className="hover:text-green-300 transition-all transform hover:rotate-3 hover:scale-105">
-              <a href="about">About</a>
+              <a href="#about">About</a>
             </li>
             <li className="hover:text-green-300 transition-all transform hover:rotate-3 hover:scale-105">
-              <a href="about">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
