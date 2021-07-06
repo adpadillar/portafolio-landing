@@ -45,21 +45,10 @@
       "title": "Sachin Global Traders Website",
       "body": "This website showcased some of the products offered by an Indian Spice Trading Company. It was built to be highly customizable and scalable, just change the data and the webppage adapts to it. It was built using the same ReactJS, NextJS, and TailwindCSS stack",
       "links": {
-        "website": "https://sachinglobaltraders.com/",
+        "website": "https://sachin-global-traders.vercel.app/",
         "sourceCode": "https://github.com/FadedController/FoodSite"
       },
       "technologies":["NextJS", "Typescript", "TailwindCSS", "Formspree.io"]
-    },
-    {
-      "src": "/img/irstrategies.png",
-      "title": "IR Strategies Website",
-      "body": "Website for the Marketing Agency 'IR Strategies'. This website was built using vanilla HTML5, CSS3, and JQuery and deployed in Netlify, taking advantage of Netlify Forms",
-      "links": {
-        "website": "https://irstrategies.com.mx/",
-        "sourceCode": "https://github.com/FadedController/irstrategies"
-      },
-      "technologies": ["HTML5", "CSS3", "JQuery", "Netlify"]
     }
-    
   ]
 }
