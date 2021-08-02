@@ -1,18 +1,22 @@
 import "tailwindcss/tailwind.css";
 import "../styles/styles.css";
 import Head from "next/head";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
-  // @ts-ignore
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
+  useEffect(() => {
     // @ts-ignore
-    dataLayer.push(arguments);
-  }
-  // @ts-ignore
-  gtag("js", new Date());
-  // @ts-ignore
-  gtag("config", "G-KKJH19PBXZ");
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      // @ts-ignore
+      dataLayer.push(arguments);
+    }
+    // @ts-ignore
+    gtag("js", new Date());
+    // @ts-ignore
+    gtag("config", "G-KKJH19PBXZ");
+  }, []);
+
   return (
     <>
       <Head>
