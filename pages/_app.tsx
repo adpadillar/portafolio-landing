@@ -3,6 +3,16 @@ import "../styles/styles.css";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
+  // @ts-ignore
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    // @ts-ignore
+    dataLayer.push(arguments);
+  }
+  // @ts-ignore
+  gtag("js", new Date());
+  // @ts-ignore
+  gtag("config", "G-KKJH19PBXZ");
   return (
     <>
       <Head>
@@ -15,12 +25,6 @@ function MyApp({ Component, pageProps }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-KKJH19PBXZ"
         ></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          {/*@ts-ignore */}
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-KKJH19PBXZ');
-        </script>
       </Head>
       <Component {...pageProps} />
     </>
