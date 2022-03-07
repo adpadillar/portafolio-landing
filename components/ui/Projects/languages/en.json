@@ -3,32 +3,32 @@
     {
       "src": "/img/iliana-hegewisch.png",
       "title": "Iliana Hegewisch Landing Page",
-      "body": "This landing page was built and designed from scratch. Some of the main technologies I used include ReactJS, NextJS, TailwindCSS, Formspree.io and Google Calendar API. This website includes a calendar interface for creating appointments in Google Calendar without leaving the website",
+      "body": "I designed and built this landing page from scratch. I implemented modern and custom features that best fitted the customer's needs. I also used some of the latest web technologies to make the site responsive and fast.",
       "links": {
-        "website": "https://iliana-hegewisch.vercel.app/",
-        "sourceCode": "https://github.com/FadedController/Iliana-Hegewisch"
+        "website": "https://ilianahegewisch.com/",
+        "sourceCode": "https://github.com/FadedController/cra-iliana"
       },
-      "technologies": ["NextJS", "Typescript", "TailwindCSS", "Google Calendar API" ]
+      "technologies": ["Calendly", "Yotube", "Bilingual", "NextJS"]
+    },
+    {
+      "src": "/img/sachin.png",
+      "title": "Sachin Global Traders Website",
+      "body": "This website showcased some of the products offered by an Indian Spice Trading Company. It was built to be highly customizable and scalable, just change the data and the webppage adapts to it. It was built using the same ReactJS, NextJS, and TailwindCSS stack",
+      "links": {
+        "website": "https://sachinglobaltraders.com/",
+        "sourceCode": "https://github.com/FadedController/FoodSite"
+      },
+      "technologies": ["NextJS", "Typescript", "TailwindCSS", "Formspree.io"]
     },
     {
       "src": "/img/next-geek.png",
       "title": "NextGeek Technologies Website",
       "body": "Built the website of an IT Company. I particularly enjoy the design of this website, which was built using ReactJS, NextJS, TailwindCSS and finally, Formspree.io, the backend service that managed contact form",
       "links": {
-        "website": "https://next-geek.vercel.app/",
+        "website": "https://nextgeek.in/",
         "sourceCode": "https://github.com/FadedController/next_geek"
       },
-      "technologies": ["NextJS", "Typescript","TailwindCSS", "Formspree.io"]
-    },
-    {
-      "src": "/img/prettier-homework.png",
-      "title": "Prettier Homework PWA",
-      "body": "Prettier Homework is a to-do list progresive web app that syncs your data in real time with your account thanks to Google Firebase's Firestore. Built with ReactJS and Material UI, it's a great looking, highly functional web application",
-      "links": {
-        "website": "https://prettier-homework.web.app/",
-        "sourceCode": "https://github.com/iQodifyX/PrettierHomework"
-      },
-      "technologies": ["Firebase", "ReactJS", "Typescript"]
+      "technologies": ["NextJS", "Typescript", "TailwindCSS", "Formspree.io"]
     },
     {
       "src": "/img/vigiles.png",
@@ -41,14 +41,14 @@
       "technologies": ["NextJS", "Typescript", "TailwindCSS", "FTP", "Bluehost"]
     },
     {
-      "src": "/img/sachin.png",
-      "title": "Sachin Global Traders Website",
-      "body": "This website showcased some of the products offered by an Indian Spice Trading Company. It was built to be highly customizable and scalable, just change the data and the webppage adapts to it. It was built using the same ReactJS, NextJS, and TailwindCSS stack",
+      "src": "/img/prettier-homework.png",
+      "title": "Prettier Homework PWA",
+      "body": "Prettier Homework is a to-do list progresive web app that syncs your data in real time with your account thanks to Google Firebase's Firestore. Built with ReactJS and Material UI, it's a great looking, highly functional web application",
       "links": {
-        "website": "https://sachin-global-traders.vercel.app/",
-        "sourceCode": "https://github.com/FadedController/FoodSite"
+        "website": "https://prettier-homework.web.app/",
+        "sourceCode": "https://github.com/iQodifyX/PrettierHomework"
       },
-      "technologies":["NextJS", "Typescript", "TailwindCSS", "Formspree.io"]
+      "technologies": ["Firebase", "ReactJS", "Typescript"]
     }
   ]
 }

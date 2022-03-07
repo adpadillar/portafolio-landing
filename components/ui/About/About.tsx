@@ -8,12 +8,15 @@ const calculateAge = (birthday: Date) => {
   return Math.abs(ageDate.getUTCFullYear() - 1970);
 };
 
+const calculateExperience = (age: number) => age - 15;
+
 interface AboutProps {
-  id?: string;
+  id: string;
 }
 
 const About: React.FC<AboutProps> = ({ id }) => {
   const age = calculateAge(new Date(2004, 9, 13));
+  const experience = calculateExperience(age);
 
   return (
     <section id={id} className="bg-gray-200 shadow-inner">
@@ -32,31 +35,26 @@ const About: React.FC<AboutProps> = ({ id }) => {
             Hello, I'm Axel Padilla
           </h2>
         </div>
-        <div className="flex flex-col space-y-6 text-lg text-gray-600 font-light text-left cursor-default">
+        <div className="flex flex-col space-y-6 text-lg text-gray-600 font-light text-left cursor-default pb-16">
           <h3 className="text-left  text-2xl font-light text-gray-700">
             I'm a frontend developer focused on ReactJS, Typescript and other
             similar technologies
           </h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-            porro delectus esse voluptatum asperiores beatae blanditiis! Sed ad
-            similique minus labore veniam architecto enim laudantium in,
-            adipisci molestiae cumque voluptatem! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Alias suscipit ea sequi quaerat nihil
-            doloremque consequatur nisi illo, minus nostrum quae ipsam enim sit
-            incidunt fuga labore iste esse ullam.
+            I am currently a {age} year old developer and I have been working on
+            the web for about {experience} years now. I learned to code at the
+            start of the Covid-19 pandemic, so I could build a simple Discord
+            Bot for my friends. It was at that moment when I realized that I
+            wanted to learn more about the web and how it works.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-            porro delectus esse voluptatum asperiores beatae blanditiis! Sed ad
-            similique minus labore veniam architecto enim laudantium in,
-            adipisci molestiae cumque voluptatem! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Alias suscipit ea sequi quaerat nihil
-            doloremque consequatur nisi illo, minus nostrum quae ipsam enim sit
-            incidunt fuga labore iste esse ullam.
+            I consider myself as someone who is good at math, and I participated
+            on Mexico's 34th and 35th National Math Olympiads. I love to learn
+            about anything and everything, specially when it comes to
+            technology.
           </p>
         </div>
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col space-y-6 pb-16">
           <h2 className="w-full text-left md:text-center text-4xl text-gray-700 font-bold cursor-default">
             Technologies I use
           </h2>

@@ -51,9 +51,9 @@ const Projects: React.FC<ProjectProps> = ({ id }) => {
             My Projects
           </h2>
           <p className="text-2xl text-gray-700 font-light cursor-default">
-            Take a look at all of the frontend projects I have built during my
-            time as a self taught frontend developer. The most recent projects
-            are at the top
+            Take a look at this list! These are a list of some of the projects I
+            have worked on recently. They were all built from scratch using some
+            of the latest web technologies.
           </p>
         </div>
         <div className="flex flex-col md:space-y-32 space-y-16">
