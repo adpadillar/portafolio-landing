@@ -10,7 +10,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
   return (
     <section
       id={id}
-      className="flex min-h-32 h-screen bg-gradient-to-tl from-yellow-400 via-orange-300 to-yellow-200"
+      className="flex min-h-32 h-screen bg-gradient-to-tl from-lime-400 via-green-400 to-green-300"
     >
       <div className="flex-3 flex flex-col justify-center bg-gradient-to-b from-[#ffffffb4] to-[#ffffff69]">
         <ContentSection className="px-8 space-y-6">
