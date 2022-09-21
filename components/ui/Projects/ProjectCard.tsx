@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <img src={src} />
       </div>
       <div className="flex flex-col space-y-4 flex-1 py-4">
-        <h3 className="text-2xl font-medium text-gray-600 cursor-default">
+        <h3 className="md:text-2xl text-xl font-medium text-gray-600 cursor-default">
           {title}
         </h3>
 
@@ -40,14 +40,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {technologies.map((text, i) => (
               <div
                 key={i}
-                className="inline-block flex-shrink-0 cursor-default transition-all text-green-500 hover:text-gray-50 hover:bg-green-500 text-sm border-green-500 border-2 px-4 py-1 rounded-full"
+                className="inline-block flex-shrink-0 cursor-default transition-all text-green-500 hover:text-gray-50 hover:bg-green-500 md:text-sm text-xs border-green-500 border-2 md:px-4 px-2 py-1 rounded-full"
               >
                 {text}
               </div>
             ))}
           </div>
         )}
-        <p className="text-lg font-light cursor-default text-gray-600">
+        <p className="md:text-lg text-base font-light cursor-default text-gray-600">
           {body}
         </p>
         <div className="flex space-x-3">
@@ -55,7 +55,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             tabIndex={tabIndex}
             href={links.website}
             target="_blank"
-            className="text-center cursor-pointer transition-all transform hover:scale-105 focus:scale-105 bg-green-600 text-gray-50 font-medium px-8 py-2 rounded-md"
+            className="text-center md:text-lg text-base cursor-pointer transition-all transform hover:scale-105 focus:scale-105 bg-green-600 text-gray-50 font-medium md:px-8 px-4 py-2 rounded-md"
           >
             Go To Website
           </a>

@@ -57,14 +57,14 @@ const Navigation: React.FC = () => {
 
   return (
     <nav
-      className={`z-10 fixed top-0 w-full transition-all flex items-center font-poppins text-xl lowercase text-gray-700 ${
+      className={`z-10 fixed top-0 w-full transition-all flex items-center font-poppins lowercase text-gray-700 ${
         isOnTop ? "bg-transparent py-8" : "bg-gray-50 py-4 shadow-xl"
       }`}
     >
       <ContentSection className="px-8">
         <ul
           className={`transition-all flex space-x-3 md:space-x-6 ${
-            isOnTop ? "text-xl" : "text-lg"
+            isOnTop ? "md:text-xl text-lg" : "md:text-lg text-base"
           }`}
         >
           <NavLink

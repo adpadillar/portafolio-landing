@@ -47,10 +47,10 @@ const Projects: React.FC<ProjectProps> = ({ id }) => {
     <section id={id}>
       <ContentSection className="flex-col px-8 py-24 font-poppins space-y-16">
         <div className="flex flex-col space-y-6">
-          <h2 className="text-4xl text-gray-700 font-bold cursor-default">
+          <h2 className="md:text-4xl text-3xl text-gray-700 font-bold cursor-default">
             My Projects
           </h2>
-          <p className="text-2xl text-gray-700 font-light cursor-default">
+          <p className="md:text-2xl text-lg text-gray-700 font-light cursor-default">
             Take a look at this list! These are a list of some of the projects I
             have worked on recently. They were all built from scratch using some
             of the latest web technologies.
@@ -63,7 +63,7 @@ const Projects: React.FC<ProjectProps> = ({ id }) => {
           <button
             tabIndex={50}
             onClick={toggleLoad}
-            className="cursor-pointer transform transition-transform hover:rotate-3 hover:scale-105 focus:rotate-3 focus:scale-105 text-xl font-medium bg-green-600 text-gray-50 px-8 py-2 rounded-full"
+            className="cursor-pointer transform transition-transform hover:rotate-3 hover:scale-105 focus:rotate-3 focus:scale-105 md:text-xl text-lg font-medium bg-green-600 text-gray-50 md:px-8 px-4 py-2 rounded-full"
           >
             {length === cardAmount ? "See Less Projects" : "See All Projects"}
           </button>

@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
                 Axel Padilla
               </h1>
               <h2 className="tracking-tight ml-1 sm:text-4xl text-2xl lowercase text-gray-700 transition-transform transform">
-                Frontend Developer
+                Software Developer
               </h2>
             </div>
             <div className="flex space-x-6 px-1">

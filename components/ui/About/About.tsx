@@ -3,24 +3,29 @@ import ContentSection from "../../layout/ContentSection";
 import Technologies from "./Technologies";
 
 const calculateAge = (birthday: Date) => {
-  var ageDifMs = Date.now() - birthday.getTime();
-  var ageDate = new Date(ageDifMs); // miliseconds from epoch
-  return Math.abs(ageDate.getUTCFullYear() - 1970);
+  // Given a Date object, calculate the age of the person
+  // get today's date
+  const today = new Date();
+  // get the difference between today and the birthday
+  const difference = today.getTime() - birthday.getTime();
+  // convert the difference to years
+  const age = Math.floor(difference / (1000 * 60 * 60 * 24 * 365.25));
+  return age;
 };
 
-const calculateExperience = (age: number) => age - 15;
+const calculateExperience = (age: number) => age - 16;
 
 interface AboutProps {
   id: string;
 }
 
 const About: React.FC<AboutProps> = ({ id }) => {
-  const age = calculateAge(new Date(2004, 9, 13));
+  const age = calculateAge(new Date(2003, 9, 13));
   const experience = calculateExperience(age);
 
   return (
     <section id={id} className="bg-gray-200 shadow-inner">
-      <ContentSection className="flex-col px-8 py-20 space-y-8 font-poppins max-w-5xl">
+      <ContentSection className="flex-col px-8 py-20 space-y-8 font-poppins max-w-3xl">
         <div className="flex flex-col items-center space-y-6">
           <div className="flex">
             <div className="transition-transform transform hover:scale-105 focus-within:scale-105 overflow-hidden rounded-full p-1 bg-green-400">
@@ -31,12 +36,12 @@ const About: React.FC<AboutProps> = ({ id }) => {
               />
             </div>
           </div>
-          <h2 className="w-full text-left md:text-center text-4xl text-gray-700 font-bold cursor-default">
+          <h2 className="w-full text-left md:text-center md:text-4xl text-3xl text-gray-700 font-bold cursor-default">
             Hello, I'm Axel Padilla
           </h2>
         </div>
-        <div className="flex flex-col space-y-6 text-lg text-gray-600 font-light text-left cursor-default pb-16">
-          <h3 className="text-left  text-2xl font-light text-gray-700">
+        <div className="flex flex-col space-y-6 md:text-lg text-base text-gray-600 font-light text-left cursor-default pb-16">
+          <h3 className="text-left font-medium md:text-2xl text-xl text-gray-700">
             I'm a frontend developer focused on ReactJS, Typescript and other
             similar technologies
           </h3>
@@ -55,8 +60,8 @@ const About: React.FC<AboutProps> = ({ id }) => {
           </p>
         </div>
         <div className="flex flex-col space-y-6 pb-16">
-          <h2 className="w-full text-left md:text-center text-4xl text-gray-700 font-bold cursor-default">
-            Technologies I use
+          <h2 className="w-full text-left md:text-center md:text-4xl text-3xl text-gray-700 font-bold cursor-default">
+            Skillset
           </h2>
           <Technologies />
         </div>

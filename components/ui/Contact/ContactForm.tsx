@@ -128,7 +128,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
         value={form.name}
         id="name"
         onChange={handleChange}
-        className={`border-2 rounded-md px-4 py-2 transition-all text-xl ${
+        className={`border-2 rounded-md px-4 py-2 transition-all md:text-xl text-lg ${
           formErrors.name && "border-red-500 placeholder-red-500"
         }`}
       />
@@ -138,7 +138,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
         value={form.email}
         id="email"
         onChange={handleChange}
-        className={`border-2 rounded-md px-4 py-2 transition-all text-xl ${
+        className={`border-2 rounded-md px-4 py-2 transition-all md:text-xl text-lg ${
           formErrors.email && "border-red-500 placeholder-red-500"
         }`}
       />
@@ -148,7 +148,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
         value={form.message}
         id="message"
         onChange={handleChange}
-        className={`border-2 rounded-md px-4 py-2 col-span-1 md:col-span-2 transition-all text-xl min-h-[12rem] ${
+        className={`border-2 rounded-md px-4 py-2 col-span-1 md:col-span-2 transition-all md:text-xl text-lg min-h-[12rem] ${
           formErrors.email && "border-red-500 placeholder-red-500"
         }`}
       ></textarea>
