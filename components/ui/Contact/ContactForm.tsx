@@ -86,12 +86,16 @@ const ContactForm: React.FC<ContactFormProps> = () => {
           setFormStatus("");
         }, 5000);
       } catch (err) {
+        console.error(err);
+
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("");
         }, 5000);
       }
     } catch (errors) {
+      console.error(errors);
+
       const errorsArr = errors as Error[];
       const newErrors = {};
       errorsArr.forEach((error) => {
