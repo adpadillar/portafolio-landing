@@ -1,23 +1,37 @@
 {
   "projects": [
     {
+      "src": "/img/race-director.png",
+      "title": "Race Director",
+      "body": "Developed a motorsport-themed web application where the community can read, write, and share articles with other users with similar interests. Deployed via an automated CI/CD pipeline using Github and Vercel.",
+      "links": {
+        "website": "https://racedirector.vercel.app/"
+      },
+      "technologies": [
+        "Typescript",
+        "React",
+        "Firebase",
+        "Github",
+        "TailwindCSS"
+      ]
+    },
+    {
+      "src": "/img/vigiles.png",
+      "title": "Vigiles Analytica",
+      "body": "Redesigned and rebuilt an existing website from a threat analysis security company. Set up a CI/CD pipeline that automatically deploys previews for reviewing new content before it goes live. Once approved, the updates are deployed automatically to the production website.",
+      "links": {
+        "website": "https://vigilesanalytica.com/"
+      },
+      "technologies": ["Typescript", "React", "Netlify CMS", "Github", "Figma"]
+    },
+    {
       "src": "/img/iliana-hegewisch.png",
-      "title": "Iliana Hegewisch Landing Page",
-      "body": "I designed and built this landing page from scratch. I implemented modern and custom features that best fitted the customer's needs. I also used some of the latest web technologies to make the site responsive and fast.",
+      "title": "Iliana Hegewisch Website",
+      "body": "Designed and built a website for Iliana Hegewisch, a coach that helps clients reach their future professional goals and strengthen personal relationships. Deployed via an automated CI/CD pipeline using Github and Netlify every time content is updated.",
       "links": {
         "website": "https://ilianahegewisch.com/"
       },
-      "technologies": ["Calendly", "Yotube", "Bilingual", "NextJS"]
-    },
-    {
-      "src": "/img/sachin.png",
-      "title": "Sachin Global Traders Website",
-      "body": "This website showcased some of the products offered by an Indian Spice Trading Company. It was built to be highly customizable and scalable, just change the data and the webppage adapts to it. It was built using the same ReactJS, NextJS, and TailwindCSS stack",
-      "links": {
-        "website": "https://sachinglobaltraders.com/",
-        "sourceCode": "https://github.com/FadedController/FoodSite"
-      },
-      "technologies": ["NextJS", "Typescript", "TailwindCSS", "Formspree.io"]
+      "technologies": ["Typescript", "React", "Netlify CMS", "Github", "Figma"]
     },
     {
       "src": "/img/next-geek.png",
@@ -30,24 +44,14 @@
       "technologies": ["NextJS", "Typescript", "TailwindCSS", "Formspree.io"]
     },
     {
-      "src": "/img/vigiles.png",
-      "title": "Vigiles Analytica Landing Page",
-      "body": "This website was made for a threat analysis security company based in Canada. It was built using the mostly the same technologies: ReactJS, NextJS, TailwindCSS. The deployment process was a bit different because it was done via FTP to a bluehost server",
+      "src": "/img/sachin.png",
+      "title": "Sachin Global Traders Website",
+      "body": "This website showcased some of the products offered by an Indian Spice Trading Company. It was built to be highly customizable and scalable, just change the data and the webppage adapts to it. It was built using the same ReactJS, NextJS, and TailwindCSS stack",
       "links": {
-        "website": "https://vigiles.site/",
-        "sourceCode": "https://github.com/FadedController/vigiles_analytica"
+        "website": "https://sachinglobaltraders.com/",
+        "sourceCode": "https://github.com/FadedController/FoodSite"
       },
-      "technologies": ["NextJS", "Typescript", "TailwindCSS", "FTP", "Bluehost"]
-    },
-    {
-      "src": "/img/prettier-homework.png",
-      "title": "Prettier Homework PWA",
-      "body": "Prettier Homework is a to-do list progresive web app that syncs your data in real time with your account thanks to Google Firebase's Firestore. Built with ReactJS and Material UI, it's a great looking, highly functional web application",
-      "links": {
-        "website": "https://prettier-homework.web.app/",
-        "sourceCode": "https://github.com/iQodifyX/PrettierHomework"
-      },
-      "technologies": ["Firebase", "ReactJS", "Typescript"]
+      "technologies": ["NextJS", "Typescript", "TailwindCSS", "Formspree.io"]
     }
   ]
 }
