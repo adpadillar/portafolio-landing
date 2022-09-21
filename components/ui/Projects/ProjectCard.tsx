@@ -7,7 +7,7 @@ interface ProjectCardProps {
     body: string;
     links: {
       website: string;
-      sourceCode: string;
+      sourceCode?: string;
     };
     technologies?: string[];
   };
