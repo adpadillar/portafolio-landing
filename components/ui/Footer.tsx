@@ -37,16 +37,13 @@ const Footer: React.FC = () => {
           </ul>
         </div>
         <div className="flex flex-1 space-x-6 px-1 justify-end items-center">
-          <a href="https://github.com/FadedController/" target="_blank">
+          <a href="https://github.com/adpadillar/" target="_blank">
             <Github className="fill-current text-gray-50 hover:text-green-300 transition-all h-6 w-6 transform hover:scale-110 hover:rotate-6" />
           </a>
           <a href="https://wa.me/5213321752871" target="_blank">
             <WhatsApp className="fill-current text-gray-50 hover:text-green-300 transition-all h-6 w-6 transform hover:scale-110 hover:rotate-6" />
           </a>
-          <a
-            href="https://www.linkedin.com/in/axel-padilla-26022520b/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/adpadillar/" target="_blank">
             <Linkedin className="fill-current text-gray-50 hover:text-green-300 transition-all h-6 w-6 transform hover:scale-110 hover:rotate-6" />
           </a>
         </div>

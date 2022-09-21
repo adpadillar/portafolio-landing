@@ -27,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
               <a
                 className="transform hover:scale-110 hover:rotate-6 focus:scale-110 focus:rotate-6 transition-transform"
                 tabIndex={5}
-                href="https://github.com/FadedController/"
+                href="https://github.com/adpadillar/"
                 target="_blank"
               >
                 <Github className="fill-current text-green-800 h-6 w-6" />
@@ -43,7 +43,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
               <a
                 className="transform hover:scale-110 hover:rotate-6 focus:scale-110 focus:rotate-6 transition-transform"
                 tabIndex={7}
-                href="https://www.linkedin.com/in/axel-padilla-26022520b/"
+                href="https://www.linkedin.com/in/adpadillar/"
                 target="_blank"
               >
                 <Linkedin className="fill-current text-green-800 h-6 w-6" />
