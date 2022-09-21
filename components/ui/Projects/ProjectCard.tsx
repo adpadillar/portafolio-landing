@@ -59,14 +59,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           >
             Go To Website
           </a>
-          <a
-            tabIndex={tabIndex + 1}
-            href={links.sourceCode}
-            target="_blank"
-            className="text-center cursor-pointer transition-all transform hover:scale-105 focus:scale-105 border-2 hover border-green-600 text-green-600 font-medium px-8 py-2 rounded-md"
-          >
-            <Github className="w-6 h-6 fill-current text-green-600" />
-          </a>
+          {links.sourceCode && (
+            <a
+              tabIndex={tabIndex + 1}
+              href={links.sourceCode}
+              target="_blank"
+              className="text-center cursor-pointer transition-all transform hover:scale-105 focus:scale-105 border-2 hover border-green-600 text-green-600 font-medium px-8 py-2 rounded-md"
+            >
+              <Github className="w-6 h-6 fill-current text-green-600" />
+            </a>
+          )}
         </div>
       </div>
     </div>

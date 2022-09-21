@@ -5,8 +5,7 @@
       "title": "Iliana Hegewisch Landing Page",
       "body": "I designed and built this landing page from scratch. I implemented modern and custom features that best fitted the customer's needs. I also used some of the latest web technologies to make the site responsive and fast.",
       "links": {
-        "website": "https://ilianahegewisch.com/",
-        "sourceCode": "https://github.com/FadedController/cra-iliana"
+        "website": "https://ilianahegewisch.com/"
       },
       "technologies": ["Calendly", "Yotube", "Bilingual", "NextJS"]
     },
