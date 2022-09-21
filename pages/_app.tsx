@@ -1,22 +1,8 @@
 import "tailwindcss/tailwind.css";
 import "../styles/styles.css";
 import Head from "next/head";
-import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    // @ts-ignore
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      // @ts-ignore
-      dataLayer.push(arguments);
-    }
-    // @ts-ignore
-    gtag("js", new Date());
-    // @ts-ignore
-    gtag("config", "G-KKJH19PBXZ");
-  }, []);
-
   return (
     <>
       <Head>
@@ -25,10 +11,6 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-KKJH19PBXZ"
-        ></script>
       </Head>
       <Component {...pageProps} />
     </>
