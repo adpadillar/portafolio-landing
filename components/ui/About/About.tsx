@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import ContentSection from "../../layout/ContentSection";
+import Modal from "../../layout/Modal";
 import Technologies from "./Technologies";
 
 const calculateAge = (birthday: Date) => {
@@ -22,6 +23,12 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ id }) => {
   const age = calculateAge(new Date(2003, 9, 13));
   const experience = calculateExperience(age);
+
+  const [pdfState, setPdfState] = useState(false);
+
+  const togglePdf = () => {
+    setPdfState(!pdfState);
+  };
 
   return (
     <section id={id} className="bg-gray-200 shadow-inner">
@@ -58,6 +65,25 @@ const About: React.FC<AboutProps> = ({ id }) => {
             about anything and everything, specially when it comes to
             technology.
           </p>
+          <div className="flex items-center justify-center">
+            <button
+              className="cursor-pointer transform transition-transform hover:rotate-3 hover:scale-105 focus:rotate-3 focus:scale-105 md:text-xl text-lg font-medium bg-green-600 text-gray-50 md:px-8 px-4 py-2 rounded-full"
+              onClick={togglePdf}
+            >
+              See Resume
+            </button>
+            <button
+              className="fixed z-50 md:right-12 right-6 bottom-6 md:bottom-12 cursor-pointer transform transition-transform hover:rotate-3 hover:scale-105 focus:rotate-3 focus:scale-105 md:text-xl text-lg font-medium bg-green-600 text-gray-50 md:px-8 px-4 py-2 rounded-full"
+              onClick={togglePdf}
+            >
+              See Resume
+            </button>
+          </div>
+        </div>
+        <div className="flex flex-col space-y-6 pb-16">
+          <h2 className="w-full text-left md:text-center md:text-4xl text-3xl text-gray-700 font-bold cursor-default">
+            Awards
+          </h2>
         </div>
         <div className="flex flex-col space-y-6 pb-16">
           <h2 className="w-full text-left md:text-center md:text-4xl text-3xl text-gray-700 font-bold cursor-default">
@@ -65,6 +91,13 @@ const About: React.FC<AboutProps> = ({ id }) => {
           </h2>
           <Technologies />
         </div>
+        <Modal state={pdfState} toggleState={togglePdf}>
+          <iframe
+            src="/pdf/Axel Daniel Padilla Reyes resume.pdf"
+            className="w-[90%] max-h-[90%]"
+            style={{ aspectRatio: "8.5 / 11" }}
+          />
+        </Modal>
       </ContentSection>
     </section>
   );
