@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
           </a>
         </div>
       </ContentSection>
-      <ContentSection className="flex-col pb-10 px-6">
+      <ContentSection className="flex-col pb-20 px-6">
         <div className="w-full h-0.5 bg-green-500"></div>
         <div className="pt-10 flex items-center justify-center">
           <p className="font-poppins font-light text-sm text-gray-300 cursor-default">
