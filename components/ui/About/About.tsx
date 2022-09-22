@@ -26,6 +26,13 @@ const About: React.FC<AboutProps> = ({ id }) => {
 
   const [pdfState, setPdfState] = useState(false);
 
+  const downloadResume = (path: string) => {
+    const link = document.createElement("a");
+    link.href = path;
+    link.download = path;
+    link.click();
+  };
+
   const togglePdf = () => {
     setPdfState(!pdfState);
   };
@@ -80,11 +87,30 @@ const About: React.FC<AboutProps> = ({ id }) => {
             </button>
           </div>
         </div>
-        <div className="flex flex-col space-y-6 pb-16">
+        {/* <div className="flex flex-col space-y-6">
           <h2 className="w-full text-left md:text-center md:text-4xl text-3xl text-gray-700 font-bold cursor-default">
             Awards
           </h2>
         </div>
+        <div className="flex flex-col space-y-6 md:text-lg text-base text-gray-600 font-light text-left cursor-default pb-16">
+          <h3 className="text-left font-medium md:text-2xl text-xl text-gray-700">
+            I'm a frontend developer focused on ReactJS, Typescript and other
+            similar technologies
+          </h3>
+          <p>
+            I am currently a {age} year old developer and I have been working on
+            the web for about {experience} years now. I learned to code at the
+            start of the Covid-19 pandemic, so I could build a simple Discord
+            Bot for my friends. It was at that moment when I realized that I
+            wanted to learn more about the web and how it works.
+          </p>
+          <p>
+            I consider myself as someone who is good at math, and I participated
+            on Mexico's 34th and 35th National Math Olympiads. I love to learn
+            about anything and everything, specially when it comes to
+            technology.
+          </p>
+        </div> */}
         <div className="flex flex-col space-y-6 pb-16">
           <h2 className="w-full text-left md:text-center md:text-4xl text-3xl text-gray-700 font-bold cursor-default">
             Skillset
@@ -94,9 +120,17 @@ const About: React.FC<AboutProps> = ({ id }) => {
         <Modal state={pdfState} toggleState={togglePdf}>
           <iframe
             src="/pdf/Axel Daniel Padilla Reyes resume.pdf"
-            className="w-[90%] max-h-[90%]"
+            className="w-[90%] max-h-[80%]"
             style={{ aspectRatio: "8.5 / 11" }}
           />
+          <button
+            className="cursor-pointer transform transition-transform hover:rotate-3 hover:scale-105 focus:rotate-3 focus:scale-105 md:text-xl text-lg font-medium bg-green-600 text-gray-50 md:px-8 px-4 py-2 rounded-full"
+            onClick={() =>
+              downloadResume("/pdf/Axel Daniel Padilla Reyes resume.pdf")
+            }
+          >
+            Download
+          </button>
         </Modal>
       </ContentSection>
     </section>
