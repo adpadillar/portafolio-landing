@@ -38,7 +38,7 @@
       "title": "NextGeek Technologies Website",
       "body": "Built the website of an IT Company. I particularly enjoy the design of this website, which was built using ReactJS, NextJS, TailwindCSS and finally, Formspree.io, the backend service that managed contact form",
       "links": {
-        "website": "https://nextgeek.in/",
+        "website": "https://nextgeek.axelpadilla.me",
         "sourceCode": "https://github.com/FadedController/next_geek"
       },
       "technologies": ["NextJS", "Typescript", "TailwindCSS", "Formspree.io"]
