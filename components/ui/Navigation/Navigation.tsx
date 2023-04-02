@@ -96,18 +96,18 @@ const Navigation: React.FC = () => {
               Projects
             </NavLink>
             <NavLink
-              tabIndex={3}
-              current={currentSection === "about" && true}
-              href="#about"
-            >
-              About
-            </NavLink>
-            <NavLink
               tabIndex={4}
               current={currentSection === "contact" && true}
               href="#contact"
             >
               Contact
+            </NavLink>
+            <NavLink
+              tabIndex={3}
+              current={currentSection === "about" && true}
+              href="https://blog.axelpadilla.me"
+            >
+              Blog
             </NavLink>
           </ul>
         </ContentSection>
