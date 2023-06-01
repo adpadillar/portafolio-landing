@@ -14,14 +14,14 @@ const calculateAge = (birthday: Date) => {
   return age;
 };
 
-const calculateExperience = (age: number) => age - 16;
+const calculateExperience = (age: number) => age - 15.5;
 
 interface AboutProps {
   id: string;
 }
 
 const About: React.FC<AboutProps> = ({ id }) => {
-  const age = calculateAge(new Date(2003, 9, 13));
+  const age = calculateAge(new Date(2004, 9, 13));
   const experience = calculateExperience(age);
 
   return (
